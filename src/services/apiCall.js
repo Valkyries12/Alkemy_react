@@ -32,7 +32,7 @@ function getHeroeInfoById (id) {
 
 function getLoginAccess (user, password) {
     return axios.post(
-      `https://challenge-react.alkemy.org/?email=${user}&password=${password}`
+      `http://challenge-react.alkemy.org/?email=${user}&password=${password}`
     )
     .then( function(response) {
       if (response.statusText === "OK") {

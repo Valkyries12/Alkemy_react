@@ -98,7 +98,8 @@ const Login = ({ setIsLogged }) => {
 
         <Row>
           <Col>
-            <Button type="submit">Submit</Button>
+            <Button  type="submit">Entrar</Button>
+            <Button onClick={() => setIsLogged(true)} className="btn-invitado" type="submit">Entrar como invitado</Button>
           </Col>
           {errorMsj && <div className="error">{errorMsj}</div>}
         </Row>
